@@ -1,8 +1,8 @@
 package gianlucamessina.BE_U2_S1_L4_springData;
 
 
-import gianlucamessina.BE_U2_S1_L2.entities.*;
-import gianlucamessina.BE_U2_S1_L2.enums.StatoTavolo;
+import gianlucamessina.BE_U2_S1_L4_springData.entities.*;
+import gianlucamessina.BE_U2_S1_L4_springData.enums.StatoTavolo;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

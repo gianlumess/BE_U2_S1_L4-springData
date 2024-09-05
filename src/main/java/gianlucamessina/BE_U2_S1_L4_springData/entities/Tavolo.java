@@ -1,6 +1,6 @@
 package gianlucamessina.BE_U2_S1_L4_springData.entities;
 
-import gianlucamessina.BE_U2_S1_L2.enums.StatoTavolo;
+import gianlucamessina.BE_U2_S1_L4_springData.enums.StatoTavolo;
 
 public class Tavolo {
     private int numeroTavolo;

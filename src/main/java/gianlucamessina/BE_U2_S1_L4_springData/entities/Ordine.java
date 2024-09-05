@@ -1,6 +1,6 @@
 package gianlucamessina.BE_U2_S1_L4_springData.entities;
 
-import gianlucamessina.BE_U2_S1_L2.enums.StatoOrdine;
+import gianlucamessina.BE_U2_S1_L4_springData.enums.StatoOrdine;
 import lombok.Getter;
 
 import java.time.LocalTime;

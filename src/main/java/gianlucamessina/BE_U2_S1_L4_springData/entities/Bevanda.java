@@ -1,5 +1,14 @@
 package gianlucamessina.BE_U2_S1_L4_springData.entities;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.Setter;
+
+@Entity
+@Table(name = "bevande")
+@Getter
+@Setter
 public class Bevanda extends Alimento {
     private double quantita;
 
@@ -8,13 +17,9 @@ public class Bevanda extends Alimento {
         this.quantita = quantita;
     }
 
-    public double getQuantita() {
-        return quantita;
+    public Bevanda() {
     }
 
-    public void setQuantita(double quantita) {
-        this.quantita = quantita;
-    }
 
     @Override
     public String toString() {

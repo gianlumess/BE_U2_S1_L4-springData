@@ -1,8 +1,17 @@
 package gianlucamessina.BE_U2_S1_L4_springData.entities;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
+import lombok.Getter;
+
 import java.util.List;
 
+@Getter
+@Entity
+@Table(name = "pizze")
 public class Pizza extends Alimento {
+    @OneToMany
     private List<Topping> toppingsList;
 
 
@@ -11,6 +20,9 @@ public class Pizza extends Alimento {
         this.toppingsList = toppings;
         this.calorie = setCalories(toppings);
         this.prezzo = setPrice(toppings);
+    }
+
+    public Pizza() {
     }
 
     public double setPrice(List<Topping> toppings) {
