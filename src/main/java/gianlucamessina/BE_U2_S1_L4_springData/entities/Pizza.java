@@ -1,8 +1,6 @@
 package gianlucamessina.BE_U2_S1_L4_springData.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 
 import java.util.List;
@@ -11,7 +9,8 @@ import java.util.List;
 @Entity
 @Table(name = "pizze")
 public class Pizza extends Alimento {
-    @OneToMany
+    @ManyToMany
+    @JoinTable(name = "pizze_toppings", joinColumns = @JoinColumn(name = "pizze"), inverseJoinColumns = @JoinColumn(name = "toppings"))
     private List<Topping> toppingsList;
 
 

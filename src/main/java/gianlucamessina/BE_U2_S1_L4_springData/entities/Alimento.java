@@ -18,10 +18,11 @@ public abstract class Alimento {
     @Id
     @GeneratedValue
     @Setter(AccessLevel.NONE)
-    private UUID id;
+    protected UUID id;
 
     public Alimento(String nome, int calorie, double prezzo) {
+        this.nome = nome;
+        this.calorie = calorie;
+        this.prezzo = prezzo;
     }
-
-
 }

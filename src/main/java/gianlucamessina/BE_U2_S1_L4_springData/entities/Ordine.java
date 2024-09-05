@@ -2,12 +2,14 @@ package gianlucamessina.BE_U2_S1_L4_springData.entities;
 
 import gianlucamessina.BE_U2_S1_L4_springData.enums.StatoOrdine;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 @Getter
+@Setter
 public class Ordine {
     private Tavolo tavolo;
     private int numeroOrdine;

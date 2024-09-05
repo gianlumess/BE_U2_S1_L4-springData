@@ -40,7 +40,7 @@ public class AlimentiConfig {
         return new Topping("Cipolla", 20, 0.50);
     }
 
-    @Bean(name = "salame_piccante")
+    @Bean
     @Primary
     public Topping salamePiccanteTopping() {
         return new Topping("Salame piccante", 80, 1);
@@ -59,6 +59,11 @@ public class AlimentiConfig {
     @Bean
     public Bevanda cocaColaBevanda() {
         return new Bevanda("Coca-Cola", 139, 2.50, 0.30);
+    }
+
+    @Bean
+    public Bevanda cocaColaZeroBevanda() {
+        return new Bevanda("Coca-Cola Zero", 0, 2.50, 0.30);
     }
 
     @Bean
@@ -134,7 +139,7 @@ public class AlimentiConfig {
         bevandaList.add(acquaNaturaleBevanda());
         bevandaList.add(acquaFrizzanteBevanda());
         bevandaList.add(cocaColaBevanda());
-        bevandaList.add(cocaColaBevanda());
+        bevandaList.add(cocaColaZeroBevanda());
 
         toppingsList.add(burrataTopping());
         toppingsList.add(cipollaTopping());
