@@ -12,14 +12,14 @@ import lombok.Setter;
 public class Bevanda extends Alimento {
     private double quantita;
 
-    public Bevanda(String nome, int calorie, double prezzo, double quantita) {
-        super(nome, calorie, prezzo);
-        this.quantita = quantita;
-    }
 
     public Bevanda() {
     }
 
+    public Bevanda(String nome, int calorie, double prezzo, double quantita) {
+        super(nome, calorie, prezzo);
+        this.quantita = quantita;
+    }
 
     @Override
     public String toString() {
