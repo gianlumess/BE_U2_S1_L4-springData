@@ -28,4 +28,8 @@ public class AlimentoService {
     public List<Bevanda> getBevande0Calories() {
         return alimentoRepository.filterBevande0Calories();
     }
+
+    public List<Bevanda> findByQuantita(double quantita) {
+        return alimentoRepository.findByQuantita(quantita);
+    }
 }

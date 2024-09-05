@@ -14,6 +14,11 @@ public interface AlimentoRepository extends JpaRepository<Alimento, UUID> {
 
     boolean existsByNome(String nome);
 
+    //****************************** CUSTOM QUERIES *************************************
     @Query("SELECT b FROM Bevanda b WHERE b.calorie = 0")
     List<Bevanda> filterBevande0Calories();
+
+    //****************************** DERIVED QUERIES *************************************
+    List<Bevanda> findByQuantita(double quantita);
+
 }

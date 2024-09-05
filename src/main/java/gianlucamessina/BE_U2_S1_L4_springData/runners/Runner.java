@@ -57,7 +57,11 @@ public class Runner implements CommandLineRunner {
         }*/
 
         //********************** QUERIES **************************
-
+        System.out.println("************* LISTA BEVANDE 0 CALORIE ***************");
+        System.out.println("");
         alimentoService.getBevande0Calories().forEach(System.out::println);
+        System.out.println("");
+        System.out.println("************* LISTA BEVANDE per quantità contenuto ***************");
+        alimentoService.findByQuantita(0.30).forEach(System.out::println);
     }
 }
